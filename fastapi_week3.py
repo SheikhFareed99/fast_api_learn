@@ -34,7 +34,7 @@ class CryptoInfo2(Base):
 Base.metadata.create_all(bind=engine)
 
 @app.post("/data")
-def put_data(data: CryptoVali):
+    def put_data(data: CryptoVali):
     db = SessionLocal()
     try:
         new_data = CryptoInfo2(
