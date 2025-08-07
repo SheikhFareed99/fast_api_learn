@@ -12,7 +12,6 @@ Base = declarative_base()
 app = FastAPI()
 
 
-
 class CryptoVali(BaseModel):
     id: int
     name: str
